@@ -27,15 +27,17 @@ button:disabled{opacity:.35}
 </head>
 <body>
 
+<!-- SLIDE 1: COVER -->
 <section class="slide active"><div class="content">
 <div class="tag">01 • COVER</div>
 <h1>SpendWise</h1>
 <h2>Take Control of Your Money.</h2>
 <p>A simple and smart budgeting platform that helps people track spending, manage budgets, and make better financial decisions.</p>
-<p><strong>Founder:</strong> Abdisalam Abdiaziz Mohamed</p>
-<p><strong>Email:</strong> abdisalamcabdicazizi@gmail.com</p>
+<p><strong>Founder:</strong> suleko dakane</p>
+<p><strong>Email:</strong> sulekhoabdi1@gmail.com</p>
 </div></section>
 
+<!-- SLIDE 2: PROBLEM -->
 <section class="slide"><div class="content">
 <div class="tag">02 • THE PROBLEM</div>
 <h2>Managing Money Is Hard</h2>
@@ -45,6 +47,7 @@ button:disabled{opacity:.35}
 <div class="card"><h3>Limited Awareness</h3><p>Many people discover they have overspent only when their money runs out.</p></div>
 </div></div></section>
 
+<!-- SLIDE 3: SOLUTION -->
 <section class="slide"><div class="content">
 <div class="tag">03 • THE SOLUTION</div>
 <h2>Meet SpendWise</h2>
@@ -58,6 +61,7 @@ button:disabled{opacity:.35}
 <p><strong>Our goal:</strong> Make budgeting simple, clear, and accessible.</p>
 </div></section>
 
+<!-- SLIDE 4: PRODUCT -->
 <section class="slide"><div class="content">
 <div class="tag">04 • PRODUCT</div>
 <h2>How SpendWise Works</h2>
@@ -68,6 +72,7 @@ button:disabled{opacity:.35}
 <div class="card"><div class="number">04</div><h3>Track</h3><p>Review spending and progress.</p></div>
 </div></div></section>
 
+<!-- SLIDE 5: MARKET -->
 <section class="slide"><div class="content">
 <div class="tag">05 • MARKET OPPORTUNITY</div>
 <h2>Who Needs SpendWise?</h2>
@@ -81,6 +86,7 @@ button:disabled{opacity:.35}
 <p>We will begin by validating demand among users in Kenya before expanding to other markets.</p>
 </div></section>
 
+<!-- SLIDE 6: BUSINESS MODEL -->
 <section class="slide"><div class="content">
 <div class="tag">06 • BUSINESS MODEL</div>
 <h2>How We Can Make Money</h2>
@@ -92,6 +98,7 @@ button:disabled{opacity:.35}
 <p>Pricing and willingness to pay will be tested with target users.</p>
 </div></section>
 
+<!-- SLIDE 7: COMPETITION -->
 <section class="slide"><div class="content">
 <div class="tag">07 • COMPETITION</div>
 <h2>Why SpendWise?</h2>
@@ -103,6 +110,7 @@ button:disabled{opacity:.35}
 <p><strong>Our opportunity:</strong> Build a simple, accessible experience shaped by the needs of our target users.</p>
 </div></section>
 
+<!-- SLIDE 8: GO TO MARKET -->
 <section class="slide"><div class="content">
 <div class="tag">08 • GO-TO-MARKET</div>
 <h2>How We Will Reach Users</h2>
@@ -114,6 +122,7 @@ button:disabled{opacity:.35}
 <li>Encourage referrals from satisfied users.</li>
 </ul></div></section>
 
+<!-- SLIDE 9: TRACTION -->
 <section class="slide"><div class="content">
 <div class="tag">09 • TRACTION & VALIDATION</div>
 <h2>Where We Are Now</h2>
@@ -126,17 +135,19 @@ button:disabled{opacity:.35}
 <p>We will add verified user numbers, testimonials, and results as they become available.</p>
 </div></section>
 
+<!-- SLIDE 10: TEAM -->
 <section class="slide"><div class="content">
 <div class="tag">10 • TEAM</div>
 <h2>The People Behind SpendWise</h2>
 <div class="card">
-<h3>Abdisalam Abdiaziz Mohamed — Founder</h3>
+<h3>suleko dakane — Founder</h3>
 <p>PLP learner and aspiring technology entrepreneur, working to develop a practical solution for everyday money management.</p>
-<p><strong>Email:</strong> abdisalamcabdicazizi@gmail.com</p>
+<p><strong>Email:</strong> sulekhoabdi1@gmail.com</p>
 </div>
 <p><strong>Future team needs:</strong> Software development, product design, and financial expertise.</p>
 </div></section>
 
+<!-- SLIDE 11: FINANCIALS -->
 <section class="slide"><div class="content">
 <div class="tag">11 • FINANCIAL PLAN & MILESTONES</div>
 <h2>Our Roadmap</h2>
@@ -149,6 +160,7 @@ button:disabled{opacity:.35}
 <p>Detailed costs, revenue forecasts, and milestones will be developed after user validation.</p>
 </div></section>
 
+<!-- SLIDE 12: THE ASK -->
 <section class="slide"><div class="content">
 <div class="tag">12 • THE ASK</div>
 <h2>Let's Make Money Management Easier.</h2>
@@ -156,8 +168,8 @@ button:disabled{opacity:.35}
 <p><strong>Our vision:</strong> Help more people understand their spending, manage their money, and build better financial habits.</p>
 <h1>SpendWise</h1>
 <p>Take Control of Your Money.</p>
-<p><strong>Founder:</strong> Abdisalam Abdiaziz Mohamed</p>
-<p><strong>Contact:</strong> abdisalamcabdicazizi@gmail.com</p>
+<p><strong>Founder:</strong> suleko dakane</p>
+<p><strong>Contact:</strong> sulekhoabdi1@gmail.com</p>
 </div></section>
 
 <nav>
@@ -169,20 +181,24 @@ button:disabled{opacity:.35}
 <script>
 let current=0;
 const slides=document.querySelectorAll('.slide');
+
 function show(){
 slides.forEach((s,i)=>s.classList.toggle('active',i===current));
 document.getElementById('count').textContent=(current+1)+' / '+slides.length;
 document.getElementById('prev').disabled=current===0;
 document.getElementById('next').disabled=current===slides.length-1;
 }
+
 function move(step){
 current=Math.max(0,Math.min(slides.length-1,current+step));
 show();
 }
+
 document.addEventListener('keydown',e=>{
 if(e.key==='ArrowRight')move(1);
 if(e.key==='ArrowLeft')move(-1);
 });
+
 show();
 </script>
 </body>
