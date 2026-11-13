@@ -10,7 +10,7 @@
 body{margin:0;background:#101827;color:white;font-family:Arial,sans-serif}
 .slide{display:none;min-height:100vh;padding:55px 8%;align-items:center;justify-content:center}
 .slide.active{display:flex}
-.content{max-width:850px;width:100%}
+.content{max-width:850px;width:100%;padding-bottom:45px}
 .tag{color:#42d6a4;letter-spacing:3px;font-size:13px}
 h1{font-size:clamp(38px,7vw,68px)}
 h2{font-size:clamp(30px,5vw,48px)}
@@ -19,10 +19,15 @@ strong{color:#42d6a4}
 .card{background:#1d2a3e;padding:22px;border-radius:14px;margin:12px 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
 .number{font-size:42px;color:#42d6a4;font-weight:bold}
+.small{font-size:14px;color:#aebbd0}
 nav{position:fixed;bottom:0;left:0;width:100%;background:#0b1220;padding:14px;display:flex;justify-content:center;align-items:center;gap:20px}
 button{background:#42d6a4;color:#102033;border:0;border-radius:8px;padding:11px 20px;font-weight:bold}
 button:disabled{opacity:.35}
-@media(max-width:600px){.slide{padding:35px 7% 85px}p,ul{font-size:16px}}
+@media(max-width:600px){
+.slide{padding:35px 7% 85px}
+p,ul{font-size:16px}
+.card{padding:17px}
+}
 </style>
 </head>
 <body>
@@ -149,25 +154,63 @@ button:disabled{opacity:.35}
 
 <!-- SLIDE 11: FINANCIALS -->
 <section class="slide"><div class="content">
-<div class="tag">11 • FINANCIAL PLAN & MILESTONES</div>
-<h2>Our Roadmap</h2>
+<div class="tag">11 • FINANCIAL PLAN</div>
+<h2>Our Financial Outlook</h2>
+<p>SpendWise plans to use a freemium model: free basic tools and an optional paid Premium plan.</p>
 <div class="grid">
-<div class="card"><div class="number">1</div><h3>Build</h3><p>Develop and improve the core budgeting features.</p></div>
-<div class="card"><div class="number">2</div><h3>Test</h3><p>Gather feedback from initial users.</p></div>
-<div class="card"><div class="number">3</div><h3>Launch</h3><p>Release an initial version and attract users.</p></div>
-<div class="card"><div class="number">4</div><h3>Grow</h3><p>Explore premium features and partnerships.</p></div>
+<div class="card">
+<h3>Free Plan</h3>
+<p>Basic expense tracking and budgeting to attract new users.</p>
 </div>
-<p>Detailed costs, revenue forecasts, and milestones will be developed after user validation.</p>
+<div class="card">
+<h3>Premium Plan</h3>
+<p>Illustrative price: <strong>KSh 150/month</strong> for advanced reports and insights.</p>
+</div>
+<div class="card">
+<h3>Partnerships</h3>
+<p>Future opportunities with financial education providers.</p>
+</div>
+</div>
+<h3>Illustrative 12-Month Revenue Scenario</h3>
+<div class="grid">
+<div class="card"><div class="number">25</div><h3>Months 4–6</h3><p>Average paying users per month.</p></div>
+<div class="card"><div class="number">60</div><h3>Months 7–9</h3><p>Average paying users per month.</p></div>
+<div class="card"><div class="number">100</div><h3>Months 10–12</h3><p>Average paying users per month.</p></div>
+</div>
+<p><strong>Estimated 12-month Premium revenue: KSh 83,250.</strong></p>
+<p class="small">This is a planning scenario, not actual revenue or confirmed users. It assumes a KSh 150 monthly subscription, no paying users in the first three months, and the average paying-user targets shown above. Actual results will depend on user testing and market demand.</p>
 </div></section>
 
 <!-- SLIDE 12: THE ASK -->
 <section class="slide"><div class="content">
 <div class="tag">12 • THE ASK</div>
-<h2>Let's Make Money Management Easier.</h2>
-<p>We are looking for support, mentorship, feedback, and potential partners to help us develop and validate SpendWise.</p>
-<p><strong>Our vision:</strong> Help more people understand their spending, manage their money, and build better financial habits.</p>
-<h1>SpendWise</h1>
-<p>Take Control of Your Money.</p>
+<h2>Seeking KSh 150,000 to Build and Launch SpendWise</h2>
+<p>We are seeking early-stage support and funding to develop the product, test it with users, and introduce it to the market.</p>
+<div class="grid">
+<div class="card">
+<div class="number">KSh 70,000</div>
+<h3>Product Development</h3>
+<p>Improve core features and user experience.</p>
+</div>
+<div class="card">
+<div class="number">KSh 30,000</div>
+<h3>User Testing</h3>
+<p>Test with potential users and collect feedback.</p>
+</div>
+<div class="card">
+<div class="number">KSh 35,000</div>
+<h3>Marketing</h3>
+<p>Promote the initial launch and reach target users.</p>
+</div>
+<div class="card">
+<div class="number">KSh 15,000</div>
+<h3>Tools & Hosting</h3>
+<p>Cover hosting and essential development tools.</p>
+</div>
+</div>
+<p class="small">This is a proposed funding target and estimated budget, subject to validation and actual costs.</p>
+<p>We also welcome mentorship, feedback, and partnerships.</p>
+<h2>SpendWise</h2>
 <p><strong>Founder:</strong> suleko dakane</p>
 <p><strong>Contact:</strong> sulekhoabdi1@gmail.com</p>
 </div></section>
